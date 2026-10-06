@@ -285,6 +285,29 @@ Covers continuous performance prediction for PMU LRP equipment:
 | `original/` | Original Google Colab version (Drive mounting) | ❌ Reference only |
 
 The `original/` notebooks require Google Drive to be mounted and will not work locally without modification.
+
+---
+## Project Results & Evaluation
+
+### Classification Metrics
+
+#### HVAC Dataset
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Logistic Regression | 75.78% | 65.55% | 66.62% | 66.10% | 86.19% |
+| Decision Tree | 77.68% | 69.15% | 66.82% | 67.96% | 75.40% |
+| **Random Forest** | **86.37%** | **80.57%** | **81.10%** | **80.83%** | **91.66%** |
+
+#### Pump Dataset
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Logistic Regression | 59.79% | 52.24% | 92.75% | 66.84% | 61.83% |
+| Decision Tree | 60.24% | 52.70% | 87.43% | 65.76% | 59.45% |
+| **Random Forest** | **77.22%** | **73.42%** | **75.03%** | **74.21%** | **80.50%** |
+
+* **Key Takeaway**: For both the HVAC and Pump datasets, the **Random Forest** model performed the best overall, yielding the highest accuracy and the strongest balanced metrics for failure prediction (achieving peak **ROC-AUC scores of 91.66% and 80.50%** respectively).
 =======
 # NETIX-AI-CSCI323
 >>>>>>> e29c685a157a9e031f2dbaf417599531057e5094
