@@ -308,6 +308,6 @@ The `original/` notebooks require Google Drive to be mounted and will not work l
 | **Random Forest** | **77.22%** | **73.42%** | **75.03%** | **74.21%** | **80.50%** |
 
 * **Key Takeaway**: For both the HVAC and Pump datasets, the **Random Forest** model performed the best overall, yielding the highest accuracy and the strongest balanced metrics for failure prediction (achieving peak **ROC-AUC scores of 91.66% and 80.50%** respectively).
-=======
+---
 # NETIX-AI-CSCI323
 >>>>>>> e29c685a157a9e031f2dbaf417599531057e5094
